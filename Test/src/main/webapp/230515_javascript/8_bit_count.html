@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      function digit8(v) {        // 숫자 b를 8비트 2진수로 변환
+        var str = "";
+        for (i = 0; i < 8; i++, v <<= 1) {
+          if (v & 0x80) str += "1";
+          else str += 0;
+        }
+        return str;
+      }
+    </script>
+  </head>
+  <body>
+    <h3>비트 논리 연산과 시프트 연산</h3>
+    <hr />
+    <script>
+      var x = 10,
+        y = 3;
+        document.write("x=" + x + "y" + y + "<br>");
+        document.write("x :        " + digit8(x) + "<br>");
+        
+    </script>
+  </body>
+</html>
