@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function over(obj) {
+		obj.src = "../images/banana.png";
+	}
+
+	function out(obj) {
+		obj.src = "../images/apple.png"
+	}
+</script>
+<meta charset="UTF-8">
+</head>
+<body>
+	<h3>마우스 올려 보세요</h3>
+	<hr>
+	<img src="../images/apple.png" alt="이미지" 
+		onmouseover="over(this)"
+		onmouseout="out(this)">
+</body>
+</html>
