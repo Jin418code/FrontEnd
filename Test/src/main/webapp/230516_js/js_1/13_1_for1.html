@@ -1,0 +1,24 @@
+<html>
+  <head> </head>
+  <style>
+    body {
+      font-size: 2em;
+      text-align: center;
+      color: skyblue;
+    }
+  </style>
+  <body>
+    <h3>경고창 띄우기</h3>
+    <hr />
+
+    <script>
+      var input = prompt("경고창을 몇개 띄울것인지 정하시오", 100);
+      var count = parseInt(input);
+
+      for (var i = 1; i <= count; i++) {
+        document.write(i + "경고창<br>");
+        alert(i + "번째 경고창");
+      }
+    </script>
+  </body>
+</html>

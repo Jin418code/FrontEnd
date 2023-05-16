@@ -1,0 +1,18 @@
+<html>
+  <head></head>
+  <style></style>
+  <body align="center">
+    <script type="text/javascript">
+      var num = 2;
+
+      var time = setInterval(function () {
+        document.write("<h1>" + num + "초가 지났습니다." + "</h1>");
+        num += 2;
+      }, 2000);
+
+      setTimeout(function () {
+        clearInterval(time);
+      }, 10500);
+    </script>
+  </body>
+</html>

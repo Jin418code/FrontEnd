@@ -1,0 +1,25 @@
+<html>
+  <head></head>
+  <style></style>
+  <body>
+    <script>
+      var su1 = 0,
+        su2 = 0,
+        addsum;
+
+      function adder(su1, su2) {
+        var sum = 0;
+        sum = su1 + su2;
+        return sum;
+      }
+
+      var n = prompt("0보다 큰 정수를 입력하세요", 0);
+      su1 = parseInt(n); // 문자열 n을 숫자로 바꿈
+      var m = prompt("0보다 큰 정수를 입력하세요", 0);
+      su2 = parseInt(m); // 문자열 n을 숫자로 바꿈
+
+      addsum = adder(su1, su2);
+      document.write("합은 " + addsum);
+    </script> 
+  </body>
+</html>

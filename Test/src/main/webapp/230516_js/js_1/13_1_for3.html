@@ -1,0 +1,26 @@
+<html>
+  <head> </head>
+  <style>
+    body {
+      font-size: 2em;
+      text-align: center;
+      color: skyblue;
+    }
+  </style>
+  <body>
+    <script>
+      var input = prompt("자료를 몇개 넣을지 입력하세요", 100);
+
+      var arr = [];
+
+      for (var i = 0; i < input; i++) {
+        var input2 = prompt("자료를 입력하세요", "슈퍼맨");
+        arr[i] = input2;
+      }
+
+      for (var i = 0; i < arr.input; i++) {
+        document.write((i + 1) + "번째" + arr[i] + "<br>");
+      }
+    </script>
+  </body>
+</html>

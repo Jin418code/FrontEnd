@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script>
+      function start(n) {
+        var m = parseInt(n);
+        if (isNaN(m)) {
+          alert("잘못입력하셨습니다.");
+          return;
+        }
+
+        for (var i = 1; i <= n; i++) {
+
+          for (var j = 0; j < i; j++) {
+            document.write("*");
+          }
+          document.write("<br>");
+        }
+      }
+    </script>
+  </head>
+  <style></style>
+  <body>
+    <script>
+      var n = prompt("별의 갯수를 입력하세요.", " ");
+      start(n);
+    </script>
+  </body>
+</html>

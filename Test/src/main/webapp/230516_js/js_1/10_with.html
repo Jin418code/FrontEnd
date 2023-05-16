@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script>
+      var info = {
+        name: "Jin",
+        age: 26,
+        phone: "010-0000-0000",
+        address: "충남 천안",
+      };
+
+      var output = "";
+      with (info) {
+        output += "name : " + name + "\n";
+        output += "age : " + age + "\n";
+        output += "phone : " + phone + "\n";
+        output += "address : " + address + "\n";
+      }
+
+      alert(output);
+
+      var s = "This is a test.";
+      document.write("Big: " + s.big() + "<br>");
+      document.write("Small: " + s.small() + "<br>");
+      document.write("Bold: " + s.bold() + "<br>");
+      document.write("Italic: " + s.italics() + "<br>");
+      document.write("Fixed: " + s.fixed() + "<br>");
+      document.write("Strike: " + s.strike() + "<br>");
+      document.write("Fontcolor: " + s.fontcolor("green") + "<br>");
+      document.write("Fontsize: " + s.fontsize(6) + "<br>");
+      document.write("Subscript: " + s.sub() + "<br>");
+      document.write("Superscript: " + s.sup() + "<br>");
+      document.write("Link: " + s.link("http://www.google.com") + "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>
