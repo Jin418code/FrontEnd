@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML 태그를 활용한 텍스트 색상 변경 프로그램 작성-DOM 객체의 이벤트 리스너 프로퍼티에 리스너 등록</title>
+	<script>
+		var hyun2;
+
+		function init() {
+			hyun2 = document.getElementById("hyun");// id선택자를 이용
+
+			hyun2.addEventListener("mouseover", function () {
+				this.style.backgroundColor = "orange", this.style.color = "red";
+			});
+
+			hyun2.addEventListener("mouseout", function () {
+				this.style.backgroundColor = "white", this.style.color = "black";
+			});
+		}
+
+	</script>
+</head>
+<!-- 마우스를 텍스트에 올리면 색상이 오렌지색으로 변경되고, 내리면 화이트색으로 변경 됩니다.  
+	DOM 객체의 이벤트 리스너 프로퍼티에 리스너 등록하는 방법으로 해결해 보세요.
+-->
+
+<body onload="init()">
+	<h2 id="hyun">익명 함수로 이벤트 리스너 작성</h2>
+
+	<h3 style="background-color: orange"></h3><!-- JSP Coding style -->
+</body>
+
+</html>
