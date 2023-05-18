@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Browser 객체중 window객체 사용법</title>
+	<script>
+		var win = window.open("", "", 'width=300, height=300');
+
+		setTimeout(function () {
+			win.open("https://www.naver.com/", "", 700, 700);
+		}, 3000);
+
+	</script>
+</head>
+
+<body>
+	<h3>Browser 객체중 window객체 사용법</h3>
+	<hr>
+	브라우저를 처음 실행할 때 나오는 첫 페이지의 사이트(네이버를 새창을 300x300으로 띄우고, 3초 뒤에 700x700으로 변경 하시오.
+</body>
+
+</html>

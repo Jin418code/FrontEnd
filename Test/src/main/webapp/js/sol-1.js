@@ -18,3 +18,4 @@ for(i=0; i<sideMenu.length; i++) {
       total.value = price+"원";
     } 
 }
+

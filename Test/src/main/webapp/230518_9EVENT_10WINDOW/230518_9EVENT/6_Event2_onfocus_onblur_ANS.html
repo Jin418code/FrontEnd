@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="event" autocomplete="off" value="이름을 입력하세요">
+
+  <script type="text/javascript">
+    var k = document.getElementById("event");
+    k.addEventListener("focus", function (e) {
+      if (k.value == "이름을 입력하세요") {
+        k.value = "";
+      }
+    });
+    k.addEventListener("blur", function (e) {
+      if (k.value == "") {
+        k.value = "이름을 입력하세요";
+      }
+    });
+  </script>
+</body>
+
+</html>

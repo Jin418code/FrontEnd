@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Browser 객체중 window객체 사용법</title>
+	<script>
+
+		function jumpsite(select) {
+			var index = select.selectedIndex;
+			var site = select.options[index].value;
+
+			window.open(site, "", "left=400, top=400, width=300, height=200");
+			//window.close();
+		}
+	</script>
+</head>
+
+<body>
+	<h3>Browser 객체중 window객체 사용법</h3>
+	<hr>
+	HTML5, CSS3, JavaScript 등을 배웁니다.<br>
+	옵션 선택할때마다 다른 윈도우가 생성됩니다.
+	<p>접속 사이트</p>
+	<select onchange="jumpsite(this)">
+		<option value="http://www.naver.com">네이버</option>
+		<option value="http://www.google.com">구글</option>
+		<option value="http://www.oracle.com">오라클</option>
+		<option value="http://www.chosun.com">조선일보</option>
+	</select>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Browser 객체중 window객체 사용법</title>
+	<script>
+
+		function jumpsite(select) {
+			var index = select.selectedIndex;
+			var site = select.options[index].value;
+
+			window.open(site, "sitewin", "left=100, top=100, width=400, height=300");
+			//window.close();
+		}
+	</script>
+</head>
+
+<body>
+	<h3>Browser 객체중 window객체 사용법</h3>
+	<hr>
+	HTML5, CSS3, JavaScript 등을 배웁니다.<br>
+	윈도의 이름을 부여하면 윈도우가 공유되어 하나의 창으로 생성됩니다."sitewin"<br>
+	<p>접속 사이트</p>
+	<select onchange="jumpsite(this)">
+		<option value="http://www.naver.com">네이버</option>
+		<option value="http://www.google.com">구글</option>
+		<option value="http://www.oracle.com">오라클</option>
+		<option value="http://www.chosun.com">조선일보</option>
+	</select>
+</body>
+
+</html>

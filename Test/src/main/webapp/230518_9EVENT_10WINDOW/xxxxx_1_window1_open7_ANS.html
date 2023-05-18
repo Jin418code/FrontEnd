@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="4">
+<title>BOM - browser object model</title>
+<script type="text/javascript">
+	//5초 후에 화면 창이 닫히도록 구현하세요.
+
+	var win = window.open("https://www.naver.com", "", "width=300, height=300");
+	// var win2 = window.open("", "", "width=300, height=300");
+	
+	setTimeout(function(){
+		win.resizeTo(700, 700);
+		var win = window.open("https://www.naver.com", "", "width=700, height=700");
+	}, 3000);
+	
+	//새창 띄우기(위치조정)
+​
+		
+	//날짜 표시하기
+	var today = new Date();
+	
+	alert(today.toLocaleString());//날짜 + 시간
+	alert(today.toLocaleDateString());//날짜
+	alert(today.toLocaleTimeString());//시간
+	
+	document.write(today.toLocaleString());
+	document.write(today.toLocaleDateString());
+	document.write(today.toLocaleTimeString());
+​
+​
+	//브라우저를 처음 실행할 때 나오는 첫 페이지의 사이트(네이버를
+	//새창을 300x300으로 띄우고, 3초 뒤에 700x700으로 변경 하시오
+​
+</script>
+​
+</head>
+<body>
+​
+</body>
+</html>

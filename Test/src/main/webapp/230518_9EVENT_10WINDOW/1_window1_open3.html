@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scal=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    function Hello() {
+      var newwin = window.opn("", "", "left=350, top=300, width=200, height=80");
+      newwin.document.write("접속에 감사합니다<br>");
+      newwin.document.body.style.backgroundColor = "yellow";
+      newwin.document.close();
+    }
+  </script>
+</head>
+
+<body onload="Hello()">
+  <h3>Browser 객체중 window 객체 사용법</h3>
+  <hr>
+  HTML5, CSS3, JavaScript 등을 배웁니다.
+</body>
+
+</html>
